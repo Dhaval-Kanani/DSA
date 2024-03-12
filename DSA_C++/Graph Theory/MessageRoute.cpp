@@ -1,19 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void dfs(vector<int> adj[], vector<int> &vis, int u)
-{
- vis[u] = 1;
-
- for (auto x : adj[u])
- {
-  if (vis[x] != 1)
-  {
-   dfs(adj, vis, x);
-  }
- }
-}
-
 int main()
 {
 
