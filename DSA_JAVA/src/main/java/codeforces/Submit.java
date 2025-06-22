@@ -4,7 +4,7 @@ import java.math.BigInteger;
 import java.util.Scanner;
 
 public class Submit {
-
+    //MOD value
     public static long mod = 1000000007;
     public static BigInteger bigMod = BigInteger.valueOf(mod);
 
