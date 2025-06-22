@@ -12,17 +12,16 @@ int main(){
 
     for(int j=0; j<n; j++) cin>>b[j];
 
-    vector<int> res(n);
+    vector<int> c(m+n);
     
-    int i = 0, j = 0;
+    int i = 0, j = 0, k = 0;
     while(i<m or j<n){
         if(j==n || (i<m and a[i]<b[j])){
-            i++;
-        } else {
-            res[j++] = i;
-        }
+           c[k++] = a[i++];
+        } else c[k++] = b[j++];
     }
-    for(auto x:res) cout<<x<<" ";
+    for(auto x: c)
+        cout<<x<<" ";
     cout<<endl;
     return 0;
 }
